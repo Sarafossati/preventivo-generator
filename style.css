@@ -1,0 +1,44 @@
+
+body{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-fields{
+    display: flex;
+}
+
+.container-fields input{
+    padding: 5px;
+    margin: 0 2em;
+}
+
+@media screen and (max-width: 550px ){
+    
+    .container-fields{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* RISPOSTA */
+
+
+
+#risposta .myAzienda div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#risposta .client{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

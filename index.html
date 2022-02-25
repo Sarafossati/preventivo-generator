@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generazione preventivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- INPUT - COMPILAZIONE -->
+    <section style="background-color: aliceblue; margin-bottom: 10em;">
+        <div class="container-fields">
+            <input type="text" name="cognome" id="cognome" placeholder="Cognome">        
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+
+            <button onclick="getNomeCognome()">Aggiungi Cognome e Nome</button>
+        </div>
+        <div class="container-fields">
+            <input type="text" name="indirizzo" id="indirizzo" placeholder="Indirizzo">        
+            <input type="number" name="civico" id="civico" placeholder="Numero civico">        
+            <input type="text" name="citta" id="citta" placeholder="Città">
+            <input type="number" name="cap" id="cap" placeholder="Cap">
+            <input type="text" name="provincia" id="provincia" placeholder="provincia">
+
+            <button onclick="getFatturazione()">Aggiungi Dati di fatturazione</button>
+        </div>
+        <div class="container-fields">
+            <input type="number" name="iva" id="iva" placeholder="Numero Partita Iva">        
+            <button onclick="getIva()">Aggiungi Partita Iva e Codice Fiscale</button>
+
+            <div class="container-fields">     
+                <input type="text" name="cf" id="cf" placeholder="Codice Fiscale">
+                <button onclick="getCf()">Aggiungi Partita Iva e Codice Fiscale</button>
+            </div>
+        </div>
+    </section>
+    <!-- RISPOSTA -->
+    <section id="risposta">
+        <div style="background-color: rgb(121, 121, 117); width: 120px; height: 120px; color: #fff; float: right;">Qui andrà il logo</div>
+        <section class="myAzienda">
+            <div>
+                <h4>Mia Azienda</h4>
+                <i>Mio Indirizzo azienda</i>
+                <i>Indirizzo azienda riga 2</i>
+                <p>Partita Iva - Codice Fiscale</p>
+
+            </div>
+        </section>
+        <section class="client">
+            <div>
+                <h4 id="valueCliente"></h4> 
+                <p id="valueFatturazione"></p> 
+                <div>
+                    <i id="valueIva"></i> <br>
+                    <i id="valueCf"></i>
+                </div>
+                 
+
+            </div>
+        </section>
+        <div>
+            
+            
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
