@@ -2,9 +2,10 @@ const getNomeCognome = () => {
 
     let nome = itemUpperCase(document.getElementById("nome").value);
     let cognome = itemUpperCase(document.getElementById("cognome").value);
-    let nomeCognome = nome + " " + cognome;
+    let nomeazienda = itemUpperCase(document.getElementById("nomeazienda").value);
+    let nomeCognomeAzienda = nome + " " + cognome + " " + nomeazienda;
 
-    addInHtml("valueCliente", nomeCognome)
+    addInHtml("valueCliente", nomeCognomeAzienda)
 }
 
 const getFatturazione = () => {

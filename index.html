@@ -9,11 +9,12 @@
 </head>
 <body>
     <!-- INPUT - COMPILAZIONE -->
-    <section style="background-color: aliceblue; margin-bottom: 10em;">
+    <section style=" margin-bottom: 5em;">
+        <h2>Inserisci qui i dati generali del cliente</h2>
         <div class="container-fields">
             <input type="text" name="cognome" id="cognome" placeholder="Cognome">        
             <input type="text" name="nome" id="nome" placeholder="Nome">
-
+            <input type="text" name="nomeazienda" id="nomeazienda" placeholder="Nome Azienda">
             <button onclick="getNomeCognome()">Aggiungi Cognome e Nome</button>
         </div>
         <div class="container-fields">
@@ -37,14 +38,14 @@
     </section>
     <!-- RISPOSTA -->
     <section id="risposta">
-        <div style="background-color: rgb(121, 121, 117); width: 120px; height: 120px; color: #fff; float: right;">Qui andrà il logo</div>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo stampasa">
+        </div>
         <section class="myAzienda">
             <div>
-                <h4>Mia Azienda</h4>
-                <i>Mio Indirizzo azienda</i>
-                <i>Indirizzo azienda riga 2</i>
+                <h4>Stampasa</h4>
+                <i>Via piccinelli 16, Mozzate (CO)</i>
                 <p>Partita Iva - Codice Fiscale</p>
-
             </div>
         </section>
         <section class="client">
